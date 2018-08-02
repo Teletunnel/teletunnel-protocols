@@ -4,7 +4,13 @@
   "description": "Protocol definitions and matchers for the teletunnel protocol",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "aegir lint",
+    "test": "aegir test",
+    "release": "aegir release",
+    "release-minor": "aegir release --type minor",
+    "release-major": "aegir release --type major",
+    "coverage": "aegir coverage",
+    "coverage-publish": "aegir coverage -u"
   },
   "keywords": [
     "teletunnel",
@@ -21,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/Teletunnel/teletunnel-protocols/issues"
   },
-  "homepage": "https://github.com/Teletunnel/teletunnel-protocols#readme"
+  "homepage": "https://github.com/Teletunnel/teletunnel-protocols#readme",
+  "devDependencies": {
+    "aegir": "^15.1.0"
+  }
 }
