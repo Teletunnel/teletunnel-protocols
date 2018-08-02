@@ -1,6 +1,6 @@
 {
   "name": "teletunnel-protocols",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Protocol definitions and matchers for the teletunnel protocol",
   "main": "src/index.js",
   "scripts": {
