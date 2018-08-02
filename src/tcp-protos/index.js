@@ -1,5 +1,6 @@
 'use strict'
 
 module.exports = [
-  require('./ssh')
+  require('./ssh'),
+  require('./ssl')
 ]
