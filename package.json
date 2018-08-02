@@ -13,5 +13,13 @@
     "forward-addr"
   ],
   "author": "Maciej Krüger <mkg20001@gmail.com>",
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teletunnel/teletunnel-protocols.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Teletunnel/teletunnel-protocols/issues"
+  },
+  "homepage": "https://github.com/Teletunnel/teletunnel-protocols#readme"
 }
