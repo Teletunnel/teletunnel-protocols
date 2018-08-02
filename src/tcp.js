@@ -2,7 +2,6 @@
 
 const tcpProtos = require('./tcp-protos')
 const mafmt = require('mafmt')
-const prom = (fnc) => new Promise((resolve, reject) => fnc((err, res) => err ? reject(err) : resolve(res)))
 
 module.exports = {
   name: 'tcp',
@@ -12,8 +11,8 @@ module.exports = {
       matcher: 'strict'
     }
   },
-  detect: (conn) => {
-    const addrs = prom(cb => conn.getObservedAddrs(cb))
+  detect: async (conn) => {
+    const addrs = await conn.getAddrs()
     let tcp = addrs.filter(mafmt.TCP.matches)[0]
     return tcp ? {port: tcp.nodeAddress().port} : false
   },

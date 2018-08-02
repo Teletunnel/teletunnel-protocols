@@ -32,6 +32,7 @@
     "aegir": "^15.1.0"
   },
   "dependencies": {
-    "mafmt": "^6.0.0"
+    "mafmt": "^6.0.0",
+    "teletunnel-core": "github:Teletunnel/teletunnel-core"
   }
 }
