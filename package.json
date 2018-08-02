@@ -30,5 +30,8 @@
   "homepage": "https://github.com/Teletunnel/teletunnel-protocols#readme",
   "devDependencies": {
     "aegir": "^15.1.0"
+  },
+  "dependencies": {
+    "mafmt": "^6.0.0"
   }
 }
