@@ -12,6 +12,9 @@
     "coverage": "aegir coverage",
     "coverage-publish": "aegir coverage -u"
   },
+  "browser": {
+    "src/tcp-protos/ssl.js": "./src/disabled.js"
+  },
   "keywords": [
     "teletunnel",
     "protocols",
