@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "mafmt": "^6.0.0",
+    "pull-stream-to-net-socket": "^1.0.0",
     "teletunnel-core": "github:Teletunnel/teletunnel-core"
   },
   "contributors": [
