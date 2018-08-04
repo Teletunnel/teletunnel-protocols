@@ -12,6 +12,6 @@ This object can also be used to disable protos by setting the proto name to fals
 
 ## Protocols
 
- - `ssh`: SSH v2 protocol. Does not support `/stream`
- - `ssl`: SSL/TLS as provided by the `tls` module
-  - `connection`: SSL/TLS options as documented [here](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
+- `ssh`: SSH-2.0 Protocol. Does not support `/stream`
+- `ssl`: SSL/TLS as provided by the `tls` module
+  - `connection`: SSL/TLS options as documented [ » here](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
