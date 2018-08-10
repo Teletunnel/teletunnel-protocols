@@ -32,14 +32,14 @@
   },
   "homepage": "https://github.com/Teletunnel/teletunnel-protocols#readme",
   "devDependencies": {
-    "aegir": "^15.1.0"
+    "aegir": "^15.1.0",
+    "teletunnel-core": "github:Teletunnel/teletunnel-core"
   },
   "dependencies": {
     "mafmt": "^6.0.0",
     "pull-stream-to-net-socket": "^1.0.0",
     "sni": "^1.0.0",
-    "stream-to-pull-stream": "^1.7.2",
-    "teletunnel-core": "github:Teletunnel/teletunnel-core"
+    "stream-to-pull-stream": "^1.7.2"
   },
   "contributors": [
     "Maciej Krüger <mkg20001@gmail.com>"

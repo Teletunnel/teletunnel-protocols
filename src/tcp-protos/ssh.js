@@ -9,15 +9,17 @@ module.exports = {
     }
   },
   detect: async (conn) => { // ssh client sends SSH-2.0<VERSION>\r\n
-    let version = String(await conn.read(7))
-
-    if (version !== 'SSH-2.0') {
+    if (String(await conn.read(8)) !== 'SSH-2.0-') {
       return false
     }
 
+    let version = ''
     let next
-    while ((next = String(await conn.read(1))) !== '\r') { // TODO: add reading limit
-      version += next
+    while (version.length < 100) {
+      while ((next = String(await conn.read(1))) !== '\r') {
+        version += next
+      }
+      break
     }
 
     return {version}
